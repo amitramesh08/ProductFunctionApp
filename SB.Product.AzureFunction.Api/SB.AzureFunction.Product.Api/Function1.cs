@@ -10,6 +10,7 @@ using Newtonsoft.Json;
 using SB.ProductApi.Database.Repository;
 using SB.ProductApi.Database.Models;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace SB.AzureFunction.Product.Api
 {
@@ -19,7 +20,6 @@ namespace SB.AzureFunction.Product.Api
         public Function1(IProductRepository productRepository)
         {
             this.productRepository = productRepository;
-            //var p = productRepository.GetProducts();
         }
 
         [FunctionName("Produsts")]
@@ -32,6 +32,19 @@ namespace SB.AzureFunction.Product.Api
             log.LogInformation("C# HTTP trigger function processed a request.");
 
             return (ActionResult)new OkObjectResult(products);
+        }
+
+        [FunctionName("GetProduct")]
+        public async Task<IActionResult> GetProductById(
+            [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "products/{productId}")] HttpRequest req,
+            ILogger log, string productId)
+        {
+            var prod = productRepository.GetProducts().Single(x => x.ProductId == int.Parse(productId));
+            //var products = new List<SB.ProductApi.Database.Models.Product>(prod);
+
+            log.LogInformation("C# HTTP trigger function processed a request.");
+
+            return (ActionResult)new OkObjectResult(prod);
         }
     }
 }
