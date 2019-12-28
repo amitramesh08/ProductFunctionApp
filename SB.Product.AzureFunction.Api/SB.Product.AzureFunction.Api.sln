@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SB.AzureFunction.ProductApi", "SB.AzureFunction.Database\SB.AzureFunction.ProductApi.csproj", "{B4E8B432-70A4-40A2-AB8C-5F8637CA9690}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SB.ProductApi.Database", "..\..\..\product-api\ProductApi\SB.Product.API\SB.ProductApi.Database\SB.ProductApi.Database.csproj", "{BC8459C0-1B71-4DBB-87D6-2AFC9C7B49B8}"
 EndProject
 Global
@@ -13,10 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B4E8B432-70A4-40A2-AB8C-5F8637CA9690}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B4E8B432-70A4-40A2-AB8C-5F8637CA9690}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B4E8B432-70A4-40A2-AB8C-5F8637CA9690}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B4E8B432-70A4-40A2-AB8C-5F8637CA9690}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BC8459C0-1B71-4DBB-87D6-2AFC9C7B49B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BC8459C0-1B71-4DBB-87D6-2AFC9C7B49B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC8459C0-1B71-4DBB-87D6-2AFC9C7B49B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
