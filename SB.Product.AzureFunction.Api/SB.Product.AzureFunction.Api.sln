@@ -3,9 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SB.ProductApi.Database", "..\..\..\product-api\ProductApi\SB.Product.API\SB.ProductApi.Database\SB.ProductApi.Database.csproj", "{BC8459C0-1B71-4DBB-87D6-2AFC9C7B49B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SB.AzureFunction.Product.Api", "SB.AzureFunction.Product.Api\SB.AzureFunction.Product.Api.csproj", "{DEE2D3DE-7CE6-47C5-AC3E-B01171A2FDB2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{48E9055F-5860-470C-B188-E6EFFB86BD77} = {48E9055F-5860-470C-B188-E6EFFB86BD77}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SB.AzureFunction.Product.Api", "SB.AzureFunction.Product.Api\SB.AzureFunction.Product.Api.csproj", "{DEE2D3DE-7CE6-47C5-AC3E-B01171A2FDB2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SB.ProductApi.Database", "..\SB.ProductApi.Database\SB.ProductApi.Database.csproj", "{48E9055F-5860-470C-B188-E6EFFB86BD77}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +16,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BC8459C0-1B71-4DBB-87D6-2AFC9C7B49B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BC8459C0-1B71-4DBB-87D6-2AFC9C7B49B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BC8459C0-1B71-4DBB-87D6-2AFC9C7B49B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BC8459C0-1B71-4DBB-87D6-2AFC9C7B49B8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DEE2D3DE-7CE6-47C5-AC3E-B01171A2FDB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DEE2D3DE-7CE6-47C5-AC3E-B01171A2FDB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DEE2D3DE-7CE6-47C5-AC3E-B01171A2FDB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DEE2D3DE-7CE6-47C5-AC3E-B01171A2FDB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48E9055F-5860-470C-B188-E6EFFB86BD77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48E9055F-5860-470C-B188-E6EFFB86BD77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48E9055F-5860-470C-B188-E6EFFB86BD77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48E9055F-5860-470C-B188-E6EFFB86BD77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -10,7 +10,7 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="SB.ProductApi.Database">
-      <HintPath>..\..\..\..\product-api\ProductApi\SB.Product.API\SB.ProductApi.Database\bin\Debug\netcoreapp2.1\SB.ProductApi.Database.dll</HintPath>
+      <HintPath>..\..\SB.ProductApi.Database\bin\Debug\netcoreapp2.1\SB.ProductApi.Database.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
